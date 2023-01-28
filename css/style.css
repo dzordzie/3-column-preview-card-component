@@ -1,0 +1,104 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: hsl(0, 0%, 95%);
+	text-align: left;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	border-radius: .625rem;
+	overflow: hidden;
+	display: flex;
+}
+
+h1 {
+	font-family: 'Big Shoulders Display', cursive;
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 1.875rem;
+}
+
+p, button {
+	font-family: 'Lexend Deca', sans-serif;
+	font-weight: 400;
+	font-size: .9375rem;
+}
+
+p {
+	line-height: 1.5625rem;
+}
+
+button {
+	padding: .9375rem 1.875rem;
+	border: none;
+	border-radius: 1.875rem;
+	cursor: pointer;
+	background-color: hsl(0, 0%, 95%);
+}
+
+.sedans button {
+	color: hsl(31, 77%, 52%);
+}
+
+.suvs button {
+	color: hsl(184, 100%, 22%);
+}
+
+.luxury button {
+	color: hsl(179, 100%, 13%);
+}
+
+button:hover,
+button:active {
+	background-color: transparent;
+	color: hsla(0, 0%, 100%, 0.75);
+	padding: .8125rem 1.75rem;
+	border-radius: 1.75rem;
+	border: .125rem solid;
+}
+
+.wrapper {
+	margin: 3.125rem;
+}
+
+main {
+	margin-top: 30px;
+	height: 230px;
+	overflow: hidden;
+}
+
+
+
+.sedans {
+	background-color: hsl(31, 77%, 52%);
+	width: 310px;
+}
+
+.suvs {
+	background-color: hsl(184, 100%, 22%);
+	width: 19.375rem;
+}
+
+.luxury {
+	background-color: hsl(179, 100%, 13%);
+	width: 19.375rem;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 740px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+	}
+}
